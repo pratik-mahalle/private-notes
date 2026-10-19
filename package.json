@@ -1,0 +1,25 @@
+{
+  "name": "private-notes",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "e2e": "node --test e2e/*.test.mjs"
+  },
+  "dependencies": {
+    "@runanywhere/proto-ts": "0.20.27",
+    "@runanywhere/web": "0.20.27",
+    "@runanywhere/web-llamacpp": "0.20.27",
+    "@runanywhere/web-onnx": "0.20.27"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.64.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.4",
+    "vitest": "^3.2.7"
+  }
+}
