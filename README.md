@@ -6,9 +6,9 @@ Record a meeting, get a summary, decisions and action items. Transcription and n
 
 ## Try it
 
-Live: https://\<your-deployment\>.vercel.app (Chrome on a laptop with WebGPU)
+Live: https://private-notes-alpha.vercel.app (Chrome on a laptop with WebGPU)
 
-The first visit downloads about 685 MB of models (roughly 40 s on my connection) and caches them in the browser. Later visits start in about 8 s. There is a "Use a sample meeting instead" link if you would rather not talk.
+The first visit downloads about 685 MB of models (about 45 s on my connection) and caches them in the browser. Later visits start in about 8 s. There is a "Use a sample meeting instead" link if you would rather not talk.
 
 ## How it works
 
@@ -46,7 +46,7 @@ Thank you to the RunAnywhere team: the SDK was fun to build on. These are the th
 
 ## Deploy
 
-Vercel, static: `npm run build`, then serve `dist/` with the headers in `vercel.json`. Before sharing the link, replace `<your-deployment>` in the `og:image` URL in `index.html` with the real Vercel host (the link-preview image is `public/og.png`).
+Vercel, static: `npm run build`, then serve `dist/` with the headers in `vercel.json`. If you deploy your own copy, change the `og:image` URL in `index.html` to your host (the link-preview image is `public/og.png`).
 
 ## Run locally
 
